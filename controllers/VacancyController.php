@@ -35,7 +35,7 @@ class VacancyController extends Controller
      */
     public function actionView($id)
     {
-        $service = (new View($_GET))->call();
+        $service = (new View($id))->call();
 
         if ($service->isSuccess()) {
             return $service->getResult();
@@ -51,7 +51,7 @@ class VacancyController extends Controller
      */
     public function actionCreate()
     {
-        $service = (new Create($_GET))->call();
+        $service = (new Create($_POST))->call();
 
         if ($service->isSuccess()) {
             return $service->getResult();

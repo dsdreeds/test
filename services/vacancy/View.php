@@ -9,7 +9,7 @@ class View extends BaseService
     private $vacancy;
     private $id;
 
-    public function __construct($id)
+    public function __construct(int $id)
     {
         $this->id = $id;
     }
