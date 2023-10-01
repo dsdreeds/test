@@ -2,7 +2,6 @@
 
 namespace controllers;
 
-use api\services\contracts\documents\Index;
 use services\vacancy\Create;
 use services\vacancy\View;
 use Yii;
