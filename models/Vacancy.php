@@ -13,7 +13,7 @@ use \yii\db\ActiveRecord;
  * @property string $description
  * @property string $created_at
  */
-class Vacancy extends ActiveRecord
+class Vacancy extends ActiveRecords
 {
     /**
      * @inheritdoc
